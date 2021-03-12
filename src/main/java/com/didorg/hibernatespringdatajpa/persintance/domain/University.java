@@ -1,7 +1,5 @@
 package com.didorg.hibernatespringdatajpa.persintance.domain;
 
-import sun.tools.tree.ShiftRightExpression;
-
 import javax.persistence.*;
 import java.util.List;
 

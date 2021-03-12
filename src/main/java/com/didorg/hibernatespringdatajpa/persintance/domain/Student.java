@@ -1,10 +1,7 @@
 package com.didorg.hibernatespringdatajpa.persintance.domain;
 
 import javax.persistence.*;
-
 import java.util.Set;
-
-import static javax.persistence.GenerationType.SEQUENCE;
 
 @Entity
 @Table(name = "student")
