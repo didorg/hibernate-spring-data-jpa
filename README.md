@@ -64,3 +64,32 @@ public class Student {
     private Set<Course> courses;
     ...
 ``` 
+
+****************
+### @OneToMany (bidirectional)  
+#### University  
+One "University" to Many "Students".  
+`mappedBy` in the parent entity. You should avoid unidirectional `@OneToMany` associations in your domain model. Otherwise, **Hibernate** might create unexpected tables and execute more SQL statements than you expected.    
+```  
+@Entity
+@Table(name = "university")
+public class University {  
+    ...  
+    @MOneToMany(mappedBy = "university", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Student> students;  
+    ...  
+```  
+### @ManyToOne (bidirectional) 
+#### Student  
+Many "Student" to One "University".  
+The owning side of these relationships is usually in the `@ManyToOne` (owner of that FK).      
+```  
+@Entity
+@Table(name = "student")
+public class Student {  
+    ...  
+    @ManyToOne
+    @JoinColumn(name = "university_id")
+    private University university;
+    ...
+``` 
