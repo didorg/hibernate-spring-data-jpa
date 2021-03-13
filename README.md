@@ -5,6 +5,7 @@
 
 ![hibernate-spring-data-jpa](https://user-images.githubusercontent.com/22514083/111009397-83215c00-8361-11eb-9f1e-3d562f99c14c.png)
 
+****************
 ### @OneToOne (bidirectional)  
 #### Student  
 Student will have the parent role. It does not make sense tuition to exist if student does not exist.  
@@ -33,7 +34,7 @@ public class Tuition {
     private Student student; 
     ...
 ``` 
-
+****************
 ### @ManyToMany (bidirectional)  
 #### Course  
 With `@ManyToMany` we should create a third table so that we can map both entities. This third table will have two FK pointing to their parent tables  
