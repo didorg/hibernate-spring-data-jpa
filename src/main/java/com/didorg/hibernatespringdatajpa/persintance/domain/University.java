@@ -9,7 +9,7 @@ public class University {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
+    private String university_name;
 
 
     // One "University" to Many "Students".
@@ -22,8 +22,8 @@ public class University {
     public University() {
     }
 
-    public University(String name) {
-        this.name = name;
+    public University(String university_name) {
+        this.university_name = university_name;
     }
 
     public Long getId() {
@@ -34,19 +34,19 @@ public class University {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUniversity_name() {
+        return university_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUniversity_name(String university_name) {
+        this.university_name = university_name;
     }
 
     @Override
     public String toString() {
         return "University{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + university_name + '\'' +
                 '}';
     }
 }

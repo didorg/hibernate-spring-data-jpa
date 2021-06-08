@@ -9,7 +9,7 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
+    private String course_name;
     private Double fee;
 
     /* With @ManyToMany, we should create a third table so that we can map both entities.
@@ -22,7 +22,7 @@ public class Course {
 
     public Course(String name, Double fee) {
 
-        this.name = name;
+        this.course_name = name;
         this.fee = fee;
     }
 
@@ -34,12 +34,12 @@ public class Course {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCourse_name() {
+        return course_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCourse_name(String course_name) {
+        this.course_name = course_name;
     }
 
     public Double getFee() {
