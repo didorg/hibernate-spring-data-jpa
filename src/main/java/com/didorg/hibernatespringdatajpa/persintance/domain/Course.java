@@ -10,7 +10,7 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String course_name;
-    private Double fee;
+    private Double course_fee;
 
     /* With @ManyToMany, we should create a third table so that we can map both entities.
     This third table will have two FK pointing to their parent tables */
@@ -20,10 +20,10 @@ public class Course {
     public Course() {
     }
 
-    public Course(String name, Double fee) {
+    public Course(String name, Double course_fee) {
 
         this.course_name = name;
-        this.fee = fee;
+        this.course_fee = course_fee;
     }
 
     public Long getId() {
@@ -42,11 +42,11 @@ public class Course {
         this.course_name = course_name;
     }
 
-    public Double getFee() {
-        return fee;
+    public Double getCourse_fee() {
+        return course_fee;
     }
 
-    public void setFee(Double fee) {
-        this.fee = fee;
+    public void setCourse_fee(Double course_fee) {
+        this.course_fee = course_fee;
     }
 }
