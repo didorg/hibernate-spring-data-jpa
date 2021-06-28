@@ -1,3 +1,5 @@
-# Hibernate - Spring Data JPA  
+# Spring Boot project that intends to cover different topics.
 
-### Each `.md` explains the corresponding topic
+1. ### Hibernate - Spring Data JPA  
+
+   ### Each `.md` explains the corresponding topic
