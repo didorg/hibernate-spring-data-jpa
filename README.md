@@ -7,4 +7,4 @@
 
 
 
-[Hibernate - Spring Data JPA]:https://github.com/didorg/ms-config
+[Hibernate - Spring Data JPA]:https://github.com/didorg/hibernate-spring-data-jpa/blob/master/hibernate-spring-data-jpa.md
